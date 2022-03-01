@@ -1,4 +1,5 @@
 yes = 'true'
+storageFile =  open('Count-to-infinite-multiple.txt',  'a')
 number1 = 0
 array1 = []
 
@@ -50,6 +51,7 @@ while yes == 'true':
     oldnumber = number1
     number1 = oldnumber + 1
     array1.append(number1)
+    storageFile.append(number1)
     print(array1)
     oldnumber = number2
     number2 = oldnumber + 1
